@@ -17,6 +17,7 @@ Run the source code file
 # Command :
 
 Sample 1 : python source_code.py liverpool vs leicester.mp4 leicester.png liverpool.png
+
 Sample 2 : python source_code.py manutd vs mancity.mp4 mancity.png manutd.png
 
 A window will appear showing tracking
