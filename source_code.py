@@ -229,7 +229,7 @@ while cap.isOpened():
         kernel = np.ones((5, 5), np.uint8)
         dilation = cv2.dilate(thresh1, kernel, iterations=1)
         erosion = cv2.erode(dilation, kernel, iterations=1)
-        median = cv2.medianBlur(mask1, 5)
+        median = cv2.medianBlur(erosion, 5)
         (_, contours, hierarchy) = cv2.findContours(median,cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
         # Color Range for white
